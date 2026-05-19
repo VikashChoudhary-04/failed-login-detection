@@ -1,0 +1,36 @@
+title: Excessive Failed Login Attempts
+
+id: 11111111-1111-1111-1111-111111111111
+
+status: experimental
+
+description: Detects repeated failed authentication attempts that may indicate brute force or password spraying activity.
+
+references:
+  - https://attack.mitre.org/techniques/T1110/
+
+author: Vikash Choudhary
+
+date: 2026/05/19
+
+logsource:
+  product: windows
+  service: security
+
+detection:
+  selection:
+    EventID: 4625
+
+  condition: selection
+
+falsepositives:
+  - User forgot password
+  - Expired credentials
+  - VPN authentication failures
+  - Misconfigured services
+
+level: medium
+
+tags:
+  - attack.credential_access
+  - attack.t1110
