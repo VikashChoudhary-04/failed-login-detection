@@ -303,3 +303,37 @@ failed-login-detection/
   * ATT&CK mapping improves detection context
   * False positives must always be considered
   * SIEM queries should be actionable and explainable
+
+---
+
+---
+
+## Screenshots
+
+### Splunk Dashboard
+
+![Splunk Dashboard](screenshots/splunk_dashboard.png)
+
+---
+
+### Failed Login Detection Query
+
+![Failed Login Detection](screenshots/failed_login_query.png)
+
+---
+
+### Successful Login Investigation
+
+![Successful Login Investigation](screenshots/successful_login_results.png)
+
+---
+
+### Process Creation Analysis
+
+![Process Creation Events](screenshots/process_creation_events.png)
+
+---
+
+### Suspicious Process Hunting
+
+![Suspicious Process Hunt](screenshots/suspicious_process_hunt.png)
